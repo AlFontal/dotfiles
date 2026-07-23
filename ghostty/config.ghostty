@@ -1,0 +1,93 @@
+# =========================================================
+# Font
+# =========================================================
+
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+
+# Slightly stronger rendering on Retina displays.
+# Remove this if bold text feels too heavy.
+font-thicken = true
+
+# A little more vertical spacing between lines.
+adjust-cell-height = 5%
+
+
+# =========================================================
+# Theme and transparency
+# =========================================================
+
+theme = "IC Orange PPL"
+
+# 1.0 is fully opaque.
+# 0.9 keeps some transparency without hurting readability too much.
+background-opacity = 0.9
+background-blur = 20
+
+# Keep the native macOS titlebar, matching the terminal background.
+macos-titlebar-style = transparent
+
+
+# =========================================================
+# Window appearance
+# =========================================================
+
+window-padding-x = 12
+window-padding-y = 10
+window-padding-balance = true
+
+mouse-hide-while-typing = true
+
+cursor-style = block
+cursor-style-blink = false
+
+
+# =========================================================
+# macOS keyboard behaviour
+# =========================================================
+
+# Left Option works as Alt in terminal applications.
+# Right Option remains available for macOS special characters.
+macos-option-as-alt = left
+
+
+# =========================================================
+# Shell and remote connections
+# =========================================================
+
+shell-integration = detect
+
+# Improves compatibility when SSHing into machines that do not have
+# Ghostty's terminfo definition installed.
+shell-integration-features = ssh-env
+
+
+# =========================================================
+# Notifications
+# =========================================================
+
+# Notify when a long command finishes while Ghostty is unfocused.
+notify-on-command-finish = unfocused
+notify-on-command-finish-after = 30s
+notify-on-command-finish-action = no-bell,notify
+
+
+# =========================================================
+# Window restoration
+# =========================================================
+
+window-save-state = always
+
+
+# =========================================================
+# Quick terminal
+# =========================================================
+
+# Requires Accessibility permission in macOS System Settings.
+keybind = global:cmd+shift+space=toggle_quick_terminal
+
+quick-terminal-position = top
+quick-terminal-size = 40%
+quick-terminal-screen = mouse
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0.15
