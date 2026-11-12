@@ -50,6 +50,10 @@ cursor-style-blink = false
 # Right Option remains available for macOS special characters.
 macos-option-as-alt = left
 
+# Physical Ctrl is mapped by macOS to Command
+keybind = super+enter=csi:13;5u
+
+
 
 # =========================================================
 # Shell and remote connections
