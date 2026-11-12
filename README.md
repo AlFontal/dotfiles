@@ -1,9 +1,19 @@
 # dotfiles
-# dotfiles
+
+My macOS configuration files, kept in one place so I can set up a new machine
+quickly and track changes over time.
+
+| Folder | What it configures |
+|---|---|
+| `ghostty/` | Ghostty terminal: font, theme, window appearance, keyboard behaviour and the quick terminal |
+| `tmux/` | tmux, with mouse support turned on |
+| `hammerspoon/` | Window shortcuts: ⌘⌥←/→ moves the divider between two side-by-side windows, resizing both; ⌃⌥←/→ focuses the window to the left or right |
+| `rectangle/` | Rectangle window snapping shortcuts (halves, maximize, move between displays) |
 
 ## Setup on a new Mac
 
-Each config lives here and is symlinked into place.
+Each config except Rectangle's lives here and is symlinked into place, so edits
+to the live config show up in this repo.
 
 ```sh
 ln -s ~/projects/dotfiles/tmux/tmux.conf ~/.tmux.conf
